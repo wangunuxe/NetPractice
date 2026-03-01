@@ -30,7 +30,7 @@ All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 # Subnet masks 
 1. Subnet adress defines which part of the IP adress id the NETWORK and which is the DEVICE.
 2. A subnet mask (e.g., 255.255.255.224 or /27) splits an IP address into:
-  	~ Network portion: Bits where the subnet mask is 1.
+  		~ Network portion: Bits where the subnet mask is 1.
 		~ Host portion: Bits where the subnet mask is 0.
 3. There are two representations of Subnet Mask:
 		~ Dotted-demical notation, eg. 255.255.255.224
@@ -47,6 +47,12 @@ All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 
 # swiches
 1. In computer networking, a switch​ is a device that connects multiple devices (like computers, printers, or other switches/routers) on a local area network (LAN). Its primary job is to forward data packets​ to the correct destination based on the MAC address​ (Media Access Control address) of the receiving device.
+2. HOW TO WORK:
+   
+4. 
+# network loop
+1. A network loop occurs when data packets circulate endlessly between network devices due to redundant paths and misconfigurations. This can cause boardcast storms (Uncontrolled flooding of traffic) and performance degradation (congestion and packet loss)
+
 # OSI layers
 
 
