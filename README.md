@@ -3,9 +3,9 @@ This project has been created as part of the 42 curriculum by jili.
 # Description
 This project is about the basics of computer networking. We will learn how to configure IP adresses, connect devices through a router, and understand the role of a gateway within a network.
 
-KEY POINTS:
-	a. basic concepts
-	b. convert demical number to binary number and convert binary number to demical number
+## KEY POINTS:
+1. basic concepts
+2. convert demical number to binary number and convert binary number to demical number
 
 # Instructions
 1. first run “python3 -m http.server 49242” in the terminal 
@@ -17,18 +17,15 @@ KEY POINTS:
 2. A subnet is a logical subdivision of an IP network, created by partitioning a larger network (like a LAN) using a subnet mask. Key traits: 🅰️Divides a LAN into smaller segments for efficiency, security, or management (e.g., 192.168.1.0/28and 192.168.1.16/28). 🅰️Requires a router​ to communicate between subnets (as seen in NetPractice’s router configurations).🅰️Subnetting reduces broadcast traffic and isolates segments (e.g., separating departments in an office).
    
 ## TCP/IP adresse (internet Protocol Address)
-### IP adresse is an identifier for your computer, it just like a home adress for your computer on a network. 
-1. His format is four numbers seperated by dots(e.g., 192.168.1.1). These four numbers you see are demical representations of binary numbers. So each number is called an "octet" (8 binary digits), and the range for each number is 0 to 255 (because 2⁸=256 possible values).
+1. IP adresse is an identifier for your computer, it just like a home adress for your computer on a network. 
+2. His format is four numbers seperated by dots(e.g., 192.168.1.1). These four numbers you see are demical representations of binary numbers. So each number is called an "octet" (8 binary digits), and the range for each number is 0 to 255 (because 2⁸=256 possible values).
 3. 127.0.0.xis a loopback address​ (reserved for internal testing on a single device)；These IPs cannot​ be used for communication between separate hosts (like Host C and Host D).
-4. Usable Host Range：
+### Usable Host Range：
    In computer networking, Network Address​ and Broadcast Address​ are two reserved IP addresses within a subnet that serve specific purposes:
-🅰️Network Address ->​ The first IP address in a subnet, used to identify the network itself. It Represents the entire subnet (e.g., 192.168.1.0/25) and Cannot be assigned to any device.
-How to identify:
-All host bits set to 0(e.g., 192.168.1.0in 192.168.1.0/25).
-🅰️ Broadcast Address -> The last IP address in a subnet, used to send data to all devices in the network. It Allows one-to-all communication (e.g., ARP requests) and Cannot be assigned to any device.
-How to identify:
-All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
-6. 
+1. Network Address ->​ The first IP address in a subnet, used to identify the network itself. It Represents the entire subnet (e.g., 192.168.1.0/25) and Cannot be assigned to any device.
+How to identify: All host bits set to 0(e.g., 192.168.1.0in 192.168.1.0/25).
+2. Broadcast Address -> The last IP address in a subnet, used to send data to all devices in the network. It Allows one-to-all communication (e.g., ARP requests) and Cannot be assigned to any device.
+How to identify: All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 	
 ## Subnet masks 
 1. Subnet adress defines which part of the IP adress id the NETWORK and which is the DEVICE.
@@ -41,10 +38,8 @@ All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 4. Devices can communicate directly if their IPs match the subnet (that means they are in the same network); If they are in different networks, they must go through a gateway(router) to commununicate.
 5. All devices on the same cable/wireless must be in the same network.
 
-	ATTENTION:
-	IP Addresses & Subnet Masks Are Binary Numbers in Decimal Form:
-	An IPv4 address​ (e.g., 192.168.1.1) is a 32-bit binary number split into 4 octets (8 bits each), displayed in decimal​ for readability.
-	IP: 192.168.1.1 → 11000000.10101000.00000001.00000001
+### ATTENTION:
+IP Addresses & Subnet Masks Are Binary Numbers in Decimal Form: An IPv4 address​ (e.g., 192.168.1.1) is a 32-bit binary number split into 4 octets (8 bits each), displayed in decimal​ for readability. IP: 192.168.1.1 → 11000000.10101000.00000001.00000001
 	
 ## default gateways
 
