@@ -1,19 +1,22 @@
 This project has been created as part of the 42 curriculum by jili.
 
-*** Description ***
+# Description
 This project is about the basics of computer networking. We will learn how to configure IP adresses, connect devices through a router, and understand the role of a gateway within a network.
-
 KEY POINTS:
 	* basic concepts
 	* convert demical number to binary number and convert binary number to demical number
 
-*** Instructions ***
+# Instructions
 1. first run “python3 -m http.server 49242”
 2. Copy the lien http://localhost:49242 to the google browser
 	
-*** Resources ***
+# Resources
 
-# TCP/IP adresse (internet Protocol Address)
+*** Local Area Network(LAN) VS Subnet ***  
+1. A LAN is a physical or logical group of devices​ connected within a limited geographic area (e.g., a home, office, or campus). Key traits:🅰️Devices in a LAN can communicate directly (e.g., via switches or Wi-Fi).🅰️Traditionally, a LAN might use a single IP address range (e.g., 192.168.1.0/24).
+2. A subnet is a logical subdivision of an IP network, created by partitioning a larger network (like a LAN) using a subnet mask. Key traits: 🅰️Divides a LAN into smaller segments for efficiency, security, or management (e.g., 192.168.1.0/28and 192.168.1.16/28). 🅰️Requires a router​ to communicate between subnets (as seen in NetPractice’s router configurations).🅰️Subnetting reduces broadcast traffic and isolates segments (e.g., separating departments in an office).
+   
+*** TCP/IP adresse (internet Protocol Address)***
 1. IP adresse is an identifier for your computer, it just like a home adress for your computer on a network. 
 2. His format is four numbers seperated by dots(e.g., 192.168.1.1). These four numbers you see are demical representations of binary numbers. So each number is called an "octet" (8 binary digits), and the range for each number is 0 to 255 (because 2⁸=256 possible values).
 3. 127.0.0.xis a loopback address​ (reserved for internal testing on a single device)；These IPs cannot​ be used for communication between separate hosts (like Host C and Host D).
@@ -27,7 +30,7 @@ How to identify:
 All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 6. 
 	
-# Subnet masks 
+*** Subnet masks ***  
 1. Subnet adress defines which part of the IP adress id the NETWORK and which is the DEVICE.
 2. A subnet mask (e.g., 255.255.255.224 or /27) splits an IP address into:
   		~ Network portion: Bits where the subnet mask is 1.
@@ -43,17 +46,19 @@ All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 	An IPv4 address​ (e.g., 192.168.1.1) is a 32-bit binary number split into 4 octets (8 bits each), displayed in decimal​ for readability.
 	IP: 192.168.1.1 → 11000000.10101000.00000001.00000001
 	
-# default gateways
+*** default gateways ***
 
-# swiches
+*** swiches *** 
 1. In computer networking, a switch​ is a device that connects multiple devices (like computers, printers, or other switches/routers) on a local area network (LAN). Its primary job is to forward data packets​ to the correct destination based on the MAC address​ (Media Access Control address) of the receiving device.
 2. HOW TO WORK:
    
 4. 
-# network loop
+*** network loop *** 
 1. A network loop occurs when data packets circulate endlessly between network devices due to redundant paths and misconfigurations. This can cause boardcast storms (Uncontrolled flooding of traffic) and performance degradation (congestion and packet loss)
 
-# OSI layers
+*** router *** 
+Routers connect different subnets (or networks) and enable communication between devices on separate subnets.
+*** OSI layers ***
 
 
 
