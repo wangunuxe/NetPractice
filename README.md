@@ -55,6 +55,14 @@ IP Addresses & Subnet Masks Are Binary Numbers in Decimal Form: An IPv4 addressâ
 1. Routers connect different subnets (or networks) and enable communication between devices on separate subnets.
 ## OSI layers
 The OSI (Open Systems Interconnection) modelâ€‹ is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven abstraction layers.
+### OSI Model Layers
+1. Physical Layer (Layer 1) : Deals with raw bit transmission over physical media(eg. cables, wifi signals).
+2. Data Link Layer (Layer 2) : Manages MAC adresses and local network communication(eg. switches).
+3. Network Layer (Layer 3) : Handles IP adressing and routing between networks(eg. routers).
+4. Transport Layer (Layer 4) : Ensures end-to-end communication(eg.TCP/UDP).
+5. Session Layer (Layer 5): Manages connections between applications.
+6. Presentation Layer (Layer 6): Translates data formats (eg. encryption)
+7. Application Layer (Layer 7) : Interfaces with applications(eg. HTTP. FTP).
 
 
 
