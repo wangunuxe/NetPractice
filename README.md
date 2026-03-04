@@ -42,7 +42,8 @@ How to identify: All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 IP Addresses & Subnet Masks Are Binary Numbers in Decimal Form: An IPv4 address​ (e.g., 192.168.1.1) is a 32-bit binary number split into 4 octets (8 bits each), displayed in decimal​ for readability. IP: 192.168.1.1 → 11000000.10101000.00000001.00000001
 	
 ## default gateways
-
+1. Default gateway = the IP of the router interface that is in the same subnet as your device
+2. All devices within the same Subnet share the same Default Gateway — which is the IP address of the router's interface that lives inside that Subnet.
 ## swiches
 1. In computer networking, a switch​ is a device that connects multiple devices (like computers, printers, or other switches/routers) on a local area network (LAN). Its primary job is to forward data packets​ to the correct destination based on the MAC address​ (Media Access Control address) of the receiving device.
 2. HOW TO WORK:
@@ -64,7 +65,8 @@ The OSI (Open Systems Interconnection) model​ is a conceptual framework that s
 6. Presentation Layer (Layer 6): Translates data formats (eg. encryption)
 7. Application Layer (Layer 7) : Interfaces with applications(eg. HTTP. FTP).
 
-
+### Errors Log
+1. multiple interface match (Netpractice_level 4): Router R has multiple interfaces (R1, R2, R3) all in the same subnet 92.31.111.0/24 — so when a packet arrives for Host B (92.31.111.193), the router doesn't know which interface to use → multiple interface match.
 
 
 
