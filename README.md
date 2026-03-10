@@ -53,7 +53,11 @@ IP Addresses & Subnet Masks Are Binary Numbers in Decimal Form: An IPv4 address�
 1. A network loop occurs when data packets circulate endlessly between network devices due to redundant paths and misconfigurations. This can cause boardcast storms (Uncontrolled flooding of traffic) and performance degradation (congestion and packet loss)
 
 ## router 
-1. Routers connect different subnets (or networks) and enable communication between devices on separate subnets.
+1. Routers connect different subnets (or networks) and enable communication between devices on separate subnets. : you cannot route between two hosts on the same subnet using a router.
+### Rules of router interfaces
+A router interface is like a "door" into a specific subnet. To send a packet somewhere, the router must have a door that opens into that neighborhood.
+1. Each Interface Belongs to Exactly One Subnet: When you assign an IP + Mask to an interface, that interface joins that subnet.
+2. Two Routers Connect via a Shared Subnet : For R1 and R2 to talk to each other, one interface from each router must be in the same subnet.
 ## OSI layers
 The OSI (Open Systems Interconnection) model​ is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven abstraction layers.
 ### OSI Model Layers
@@ -66,7 +70,8 @@ The OSI (Open Systems Interconnection) model​ is a conceptual framework that s
 7. Application Layer (Layer 7) : Interfaces with applications(eg. HTTP. FTP).
 
 ### Errors Log
-1. multiple interface match (Netpractice_level 4): Router R has multiple interfaces (R1, R2, R3) all in the same subnet 92.31.111.0/24 — so when a packet arrives for Host B (92.31.111.193), the router doesn't know which interface to use → multiple interface match.
+1. “multiple interface match” (Netpractice_level 4): Router R has multiple interfaces (R1, R2, R3) all in the same subnet 92.31.111.0/24 — so when a packet arrives for Host B (92.31.111.193), the router doesn't know which interface to use → multiple interface match.
+.
 
 
 
