@@ -8,8 +8,14 @@ This project is about the basics of computer networking. We will learn how to co
 2. convert demical number to binary number and convert binary number to demical number
 
 # Instructions
-1. first run “python3 -m http.server 49242” in the terminal 
-2. Copy the lien http://localhost:49242 to the google browser
+1. First, download the ffle attached to the project’s page
+2. Then, extract the files into any folder of your choice.
+3. run “python3 -m http.server 49242” in the terminal of this folder. 
+5. Copy the lien http://localhost:49242 to the google browser. This step will launch a web server and open the interface in the google browser.
+6. practice by entering your login in the field to use your personal configuration.
+7. use the "evaluation" tab to generate a random configuration, also suitable for evaluations
+8. There are 10 levels for training. For each level, a non-fonctioning network diagram is displayed. There are two buttons we can use :[Check again] to verify whether your conffguration is correct;[Get my config] to download your conffguration whenever you need to; you will
+need it when submitting your assignment.When you have successfully completed a level, a new button will appear. Click this button to proceed to the next level.
 	
 # Resources
 ## Local Area Network(LAN) VS Subnet 
@@ -26,7 +32,8 @@ This project is about the basics of computer networking. We will learn how to co
 How to identify: All host bits set to 0(e.g., 192.168.1.0in 192.168.1.0/25).
 2. Broadcast Address -> The last IP address in a subnet, used to send data to all devices in the network. It Allows one-to-all communication (e.g., ARP requests) and Cannot be assigned to any device.
 How to identify: All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
-	
+### useful links:
+https://en.wikipedia.org/wiki/IP_address  
 ## Subnet masks 
 1. Subnet adress defines which part of the IP adress id the NETWORK and which is the DEVICE.
 2. A subnet mask (e.g., 255.255.255.224 or /27) splits an IP address into:
@@ -40,15 +47,20 @@ How to identify: All host bits set to 1(e.g., 192.168.1.127in 192.168.1.0/25).
 
 ### ATTENTION:
 IP Addresses & Subnet Masks Are Binary Numbers in Decimal Form: An IPv4 address​ (e.g., 192.168.1.1) is a 32-bit binary number split into 4 octets (8 bits each), displayed in decimal​ for readability. IP: 192.168.1.1 → 11000000.10101000.00000001.00000001
-	
+### useful links:
+https://www.calculator.net/ip-subnet-calculator.html  
+https://en.wikipedia.org/wiki/Subnet  
+
 ## default gateways
 1. Default gateway = the IP of the router interface that is in the same subnet as your device
 2. All devices within the same Subnet share the same Default Gateway — which is the IP address of the router's interface that lives inside that Subnet.
+### useful links
+https://en.wikipedia.org/wiki/Default_gateway  
+
+
 ## swiches
 1. In computer networking, a switch​ is a device that connects multiple devices (like computers, printers, or other switches/routers) on a local area network (LAN). Its primary job is to forward data packets​ to the correct destination based on the MAC address​ (Media Access Control address) of the receiving device.
-2. HOW TO WORK:
-   
-4. 
+
 ## network loop
 1. A network loop occurs when data packets circulate endlessly between network devices due to redundant paths and misconfigurations. This can cause boardcast storms (Uncontrolled flooding of traffic) and performance degradation (congestion and packet loss)
 
