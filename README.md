@@ -59,13 +59,13 @@ https://en.wikipedia.org/wiki/Default_gateway
 
 
 ## swiches
-1. In computer networking, a switch​ is a device that connects multiple devices (like computers, printers, or other switches/routers) on a local area network (LAN). Its primary job is to forward data packets​ to the correct destination based on the MAC address​ (Media Access Control address) of the receiving device.
+In computer networking, a switch​ is a device that connects multiple devices (like computers, printers, or other switches/routers) on a local area network (LAN). Its primary job is to forward data packets​ to the correct destination based on the MAC address​ (Media Access Control address) of the receiving device.
 
 ## network loop
-1. A network loop occurs when data packets circulate endlessly between network devices due to redundant paths and misconfigurations. This can cause boardcast storms (Uncontrolled flooding of traffic) and performance degradation (congestion and packet loss)
+A network loop occurs when data packets circulate endlessly between network devices due to redundant paths and misconfigurations. This can cause boardcast storms (Uncontrolled flooding of traffic) and performance degradation (congestion and packet loss)
 
 ## router 
-1. Routers connect different subnets (or networks) and enable communication between devices on separate subnets. : you cannot route between two hosts on the same subnet using a router.
+Routers connect different subnets (or networks) and enable communication between devices on separate subnets. : you cannot route between two hosts on the same subnet using a router.
 ### Rules of router interfaces
 A router interface is like a "door" into a specific subnet. To send a packet somewhere, the router must have a door that opens into that neighborhood.
 1. Each Interface Belongs to Exactly One Subnet: When you assign an IP + Mask to an interface, that interface joins that subnet.
@@ -81,9 +81,8 @@ The OSI (Open Systems Interconnection) model​ is a conceptual framework that s
 6. Presentation Layer (Layer 6): Translates data formats (eg. encryption)
 7. Application Layer (Layer 7) : Interfaces with applications(eg. HTTP. FTP).
 
-### Errors Log
+## Errors Log
 1. “multiple interface match” (Netpractice_level 4): Router R has multiple interfaces (R1, R2, R3) all in the same subnet 92.31.111.0/24 — so when a packet arrives for Host B (92.31.111.193), the router doesn't know which interface to use → multiple interface match.
-.
 
 
 
